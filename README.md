@@ -1,2 +1,2 @@
 # haskell-exercises
-Exercises/examples of algorithms written in Haskell
+Algorithms written in Haskell, to learn and exercise functional programming and Haskel
