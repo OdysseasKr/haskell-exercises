@@ -1,6 +1,7 @@
 ---
 --- Array operations by Odysseas (16/04/2015)
 ---
+module ArrayOps where
 
 --- Addition
 add :: (Num a) => [a] -> [a] -> [a]
