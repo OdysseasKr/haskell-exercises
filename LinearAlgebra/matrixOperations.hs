@@ -19,13 +19,3 @@ sub [] [] = []
 sub (x:xs) (y:ys) =
     (ArrayOps.sub x y) : MatrixOps.sub xs ys
 sub _ _ = error "Invalid arguments"
-
---- Multiplication
-multi :: (Num a) => [[a]] -> [[a]] -> [[a]]
-multi [] _ = []
-multi (x:xs) ys = 
-    (computeRow x ys) : MatrixOps.multi xs ys
-    where 
-        yrow = map (head) ys
-        computeRow _ _ = [1,1,1] 
-multi _ _ = error "Invalid arguments"
