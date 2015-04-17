@@ -1,7 +1,14 @@
 ---
 --- Array operations by Odysseas (16/04/2015)
 ---
-module ArrayOps where
+module Linear.ArrayOps
+( add
+, sub
+, multi
+, elMulti
+, division
+, pow
+) where
 
 --- Addition
 add :: (Num a) => [a] -> [a] -> [a]
