@@ -21,6 +21,13 @@ sub _ _ = error "Invalid arguments"
 multi :: (Num a) => a -> [a] -> [a]
 multi x y = map (*x) y
 
+-- Elementwise Multiplication
+elMulti :: (Num a) => [a] -> [a] -> [a]
+elMulti [] [] = []
+elMulti (x:xs) (y:ys) =
+    (x*y) : (elMulti xs ys)
+elMulti _ _ = error "Invalid arguments"
+
 --- Division
 division :: (Fractional a) => a -> [a] -> [a]
 division x y = map (/x) y
